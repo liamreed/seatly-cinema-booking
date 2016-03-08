@@ -1,0 +1,20 @@
+!SESSION 2016-02-23 20:44:10.407 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.php.product -data C:\xampp\htdocs\project -product org.eclipse.epp.package.php.product
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2016-02-23 20:44:23.855
+!MESSAGE Initializing WakaTime plugin (https://wakatime.com) v2.0.4
+!SESSION 2016-02-23 20:46:12.199 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.php.product -product org.eclipse.epp.package.php.product -data C:\xampp\htdocs\project -product org.eclipse.epp.package.php.product
+
+!ENTRY com.wakatime.eclipse.plugin 1 0 2016-02-23 20:46:20.864
+!MESSAGE Initializing WakaTime plugin (https://wakatime.com) v2.0.4

@@ -1,0 +1,22 @@
+.main-container {
+    margin-top:80px;
+}
+
+body {
+    background-image: url("../img/reel.png") !important;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: #26445D;
+}
+
+.spacer {
+    margin-top: 180px;
+}
+
+.dark {
+    color:#333;
+}
+
+.seats {
+    margin-top: 52px;
+}
