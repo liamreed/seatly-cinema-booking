@@ -18,5 +18,14 @@ body {
 }
 
 .seats {
-    margin-top: 52px;
+    margin-top: 80px;
+}
+
+.form-horizontal .form-group {
+    color: #fff;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
 }

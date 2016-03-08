@@ -48,13 +48,13 @@
         <div class="form-group">
             <label for="location" class="col-sm-2 control-label">Location</label>
             <div class="col-sm-4">
-                <input type="text" name="location" id="location" value="{{ $account->location ?: old('location') }}" class="form-control" placeholder="Lagos, Nigeria">
+                <input type="text" name="location" id="location" value="{{ $account->location ?: old('location') }}" class="form-control" placeholder="London, United Kingdom">
             </div>
         </div>
         <div class="form-group">
             <label for="website" class="col-sm-2 control-label">Website</label>
             <div class="col-sm-4">
-                <input type="text" name="website" id="website" value="{{ $account->website ?: old('website') }}" class="form-control" placeholder="http://goodheads.io">
+                <input type="text" name="website" id="website" value="{{ $account->website ?: old('website') }}" class="form-control" placeholder="">
             </div>
         </div>
         <div class="form-group">

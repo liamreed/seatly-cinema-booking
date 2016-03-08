@@ -22,13 +22,10 @@
     </div>
     <footer class="footer">
         <div class="container text-center">
-        <p class="pull-left">© 2016 Liam Reed. All Rights Reserved</p>
+        <p class="pull-left">© 2016 Liam Reed</p>
         <ul class="pull-right list-inline">
             <li>
-                <a href="https://github.com/unicodeveloper/laravel-hackathon-starter">GitHub Project</a>
-            </li>
-            <li>
-                <a href="https://github.com/unicodeveloper/laravel-hackathon-starter/issues">Issues</a>
+                <a href="https://github.com/liamreed/seatly-cinema-booking">GitHub</a>
             </li>
         </ul>
         </div>
