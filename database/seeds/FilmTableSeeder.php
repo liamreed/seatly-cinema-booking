@@ -12,8 +12,7 @@ class FilmTableSeeder extends Seeder
     public function run()
     {
         DB::table('films')->insert([
-            'film' => "Batman vs Superman",
-            'time'=> "18:30"
+            'film' => "Batman vs Superman"
         ]);
     }
 }

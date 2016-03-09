@@ -4,10 +4,12 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-body,
 html {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
 }
 
 body {
@@ -162,12 +164,14 @@ h6 {
     }
 }
 
+
 footer {
-    padding: 20px 0;
-    background-color: #f8f8f8;
     position: absolute;
+    left: 0;
     bottom: 0;
+    height: 100px;
     width: 100%;
+    color: #fff;
 }
 
 p.copyright {

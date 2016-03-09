@@ -77,4 +77,26 @@
         return total;
     }
 
+    id = $('#id').html();
+    document.getElementById('bookingForm').action = "bookings/get" + id;
+
+    setInterval(function() {
+        $.ajax({
+            type     : 'GET',
+            url      : 'bookings/get/' + id,
+            dataType : 'json',
+            success  : function(response) {
+                //iterate through all bookings for our event
+                $.each(response.bookings, function(index, booking) {
+                    //find seat by id and set its status to unavailable
+                    console.log(response.bookings);
+                    sc.status(booking.seat_id, 'unavailable');
+                });
+            }
+        });
+    }, 4000); //every 10 seconds
+
+</script>
+
+<script>
 </script>

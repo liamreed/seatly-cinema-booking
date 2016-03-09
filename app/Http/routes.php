@@ -37,6 +37,15 @@ Route::group(['middleware' => ['web']], function () {
         return view('book');
     });
 
+    Route::get('bookings/get/{id}', [
+        'uses' => 'BookingController@getSeats',
+        'middleware' => ['guest']
+    ]);
+
+    Route::get('bookings/save', [
+        'uses' => 'BookingController@saveSeats'
+    ]);
+
     Route::group(['prefix' => 'api'], function() {
         Route::get('github', [
             'uses' => 'GithubController@getPage',
