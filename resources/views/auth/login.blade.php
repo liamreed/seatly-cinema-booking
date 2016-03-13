@@ -9,7 +9,7 @@
             <h3>Sign In</h3>
         </div>
 
-         <form role="form" method="POST" action="{{ route('auth.login') }}" class="form-horizontal" _lpchecked="1">
+        <form role="form" method="POST" action="{{ route('auth.login') }}" class="form-horizontal" _lpchecked="1">
             {!! csrf_field() !!}
             <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
                 <label for="email" class="col-sm-2 control-label">Email</label>
@@ -34,6 +34,7 @@
                 <div class="col-sm-offset-2 col-sm-8">
                     <button type="submit" class="btn btn-primary"><i class="fa fa-user"></i> Login</button>
                     <a href="{{ url('/password/reset') }}" class="btn btn-link">Forgot your password?</a>
+                    <a href="{{ url('/signup') }}"><button class="btn btn-info">Dont have an account?</a>
                 </div>
             </div>
         </form>

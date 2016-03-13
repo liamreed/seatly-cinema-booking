@@ -33,9 +33,9 @@ Route::group(['middleware' => ['web']], function () {
         return view('apidashboard');
     });
 
-    Route::get('book', function () {
+    Route::get('book', ['middleware' => 'auth', function () {
         return view('book');
-    });
+    }]);
 
     Route::get('bookings/get/{id}', [
         'uses' => 'BookingController@getSeats',
