@@ -29,6 +29,7 @@
                                     <thead class="thead-inverse">
                                     <tr>
                                         <th>#</th>
+                                        <th>EMAIL</th>
                                         <th>SEAT_ID</th>
                                         <th>FILM</th>
                                         <th>FILM ID</th>
@@ -42,6 +43,7 @@
                                     @foreach ($bookings as $booking)
                                         <tr class="siteRow">
                                             <td>{{ $booking->id }}</td>
+                                            <td>{{ $booking->email }}</td>
                                             <td>{{ $booking->seat_id }}</td>
                                             <td>{{ $booking->film }} </td>
                                             <td>{{ $booking->film_id }}</td>

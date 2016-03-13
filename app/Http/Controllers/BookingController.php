@@ -9,6 +9,7 @@ use DB;
 use Redirect;
 use Session;
 use View;
+use Auth;
 use Illuminate\Support\Facades\Input;
 
 class BookingController extends Controller
@@ -29,7 +30,12 @@ class BookingController extends Controller
     {
         $booking = new Booking();
 
+        if(is_array(Input::get('seat_id')) && count(Input::get('seat_id')) > 0) {
+
         foreach (Input::get('seat_id') as $key => $value) {
+            if (Auth::check()) {
+                $booking->email = Auth::user()->email;
+            }
             $booking->seat_id = $value;
             $booking->film_id = Input::get('film_id');
             $booking->film = Input::get('film');
@@ -38,5 +44,6 @@ class BookingController extends Controller
         }
 
         return redirect::back();
+    }
     }
 }
