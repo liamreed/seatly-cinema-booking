@@ -17,17 +17,21 @@
                                 <h1>Seatly</h1>
                                 <h3>A Ticket Booking System</h3>
                                 <hr class="intro-divider">
-                                <ul class="list-inline intro-social-buttons">
-                                    <li>
-                                        <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                                    </li>
-                                </ul>
+                                <div class="row">
+                                        <div class="col-md-3 portfolio-item">
+                                          <div class="panel panel-cover">
+                                            <div class="panel-heading text-center">London Has Fallen</div>
+                                            <div class="panel-body">
+                                              <a href="book">
+                                                <img class="img-responsive img-cover" src=" {{ URL::asset('img/cover/1.jpg') }}" alt="cover"></img>
+                                              </a>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             </div>
                         </div>
                     </div>

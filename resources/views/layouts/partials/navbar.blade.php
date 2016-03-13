@@ -7,14 +7,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button><a href="/" class="navbar-brand">
-            <i class="fa fa-frown-o"></i> Seatly</a>
+            Seatly</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="{{ request()->path() == "/" ? 'active' : 'n' }}"><a href="/">Home</a></li>
-                <li class="{{ request()->path() == "book" ? 'active' : 'n' }}"><a href="book">Book</a></li>
-                <li class="{{ request()->path() == "api" ? 'active' : 'n' }}"><a href="api">API Examples</a></li>
-                <li class="{{ request()->path() == "contact" ? 'active' : 'n' }}"><a href="contact">Contact</a></li>
             </ul>
 
             @if (Auth::guest())

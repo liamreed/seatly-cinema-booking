@@ -38,7 +38,9 @@
             click: function () { //Click event
                 if (this.status() == 'available') { //optional seat
                     $('<li>R'+(this.settings.row+1)+' S'+this.settings.label+'</li>')
-                            .attr('id', 'cart-item-'+this.settings.id)
+                            .attr('id', 'seat_id')
+                            .attr('name', 'seat_id[]')
+                            .attr('value', this.settings.id)
                             .data('seatId', this.settings.id)
                             .appendTo($cart);
 
@@ -77,8 +79,7 @@
         return total;
     }
 
-    id = $('#id').html();
-    document.getElementById('bookingForm').action = "bookings/get" + id;
+    id = $('#film_id').html();
 
     setInterval(function() {
         $.ajax({
@@ -96,7 +97,6 @@
         });
     }, 4000); //every 10 seconds
 
-</script>
 
-<script>
+
 </script>

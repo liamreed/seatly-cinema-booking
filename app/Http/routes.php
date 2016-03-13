@@ -42,6 +42,10 @@ Route::group(['middleware' => ['web']], function () {
         'middleware' => ['guest']
     ]);
 
+    Route::post('bookings/save', [
+        'uses' => 'BookingController@saveSeats'
+    ]);
+
     Route::get('bookings/save', [
         'uses' => 'BookingController@saveSeats'
     ]);
