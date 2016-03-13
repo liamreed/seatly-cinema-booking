@@ -57,7 +57,7 @@
                         </div><!--  /.table-responsive -->
                     </div><!-- /.box-body -->
                     <div class="box-footer">
-                        {{ $sites = DB::table('bookings')->count() }} booked tickets
+                        {{ $bookings = DB::table('bookings')->count() }} booked tickets
                     </div><!-- box-footer -->
                 </div><!-- /.box -->
             </div>
