@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bfe6586-9609-49af-a2f3-f048ad0cba6f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookingController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/book.blade.php" afterPath="$PROJECT_DIR$/resources/views/book.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/partials/js.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/js.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/partials/navbar.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-    </list>
+    <list default="true" id="8bfe6586-9609-49af-a2f3-f048ad0cba6f" name="Default" comment="" />
     <ignored path="seatly-cinema-booking.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -498,7 +490,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="195" y="70" width="1714" height="1050" extended-state="0" />
+    <frame x="195" y="70" width="1714" height="1050" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />

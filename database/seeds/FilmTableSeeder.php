@@ -12,7 +12,7 @@ class FilmTableSeeder extends Seeder
     public function run()
     {
         DB::table('films')->insert([
-            'film' => "Batman vs Superman"
+            'film' => "London Has Fallen"
         ]);
     }
 }
