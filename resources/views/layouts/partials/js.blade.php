@@ -37,9 +37,11 @@
             },
             click: function () { //Click event
                 if (this.status() == 'available') { //optional seat
-                    $('<li>R'+(this.settings.row+1)+' S'+this.settings.label+'</li>')
+                    $('<input><p>R'+(this.settings.row+1)+' S'+this.settings.label+'</p></input>')
                             .attr('id', 'seat_id')
                             .attr('name', 'seat_id[]')
+                            .attr('type', 'hidden')
+                            .attr('style', 'padding-right:4px;')
                             .attr('value', this.settings.id)
                             .data('seatId', this.settings.id)
                             .appendTo($cart);
@@ -63,10 +65,13 @@
                 } else {
                     return this.style();
                 }
+
             }
+
         });
-        //sold seat
-        sc.get(['1_2', '4_4','4_5','6_6','6_7','8_5','8_6','8_7','8_8', '10_1', '10_2']).status('unavailable');
+
+            //let's pretend some seats have already been booked
+                sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
 
     });
     //sum total money
@@ -79,24 +84,24 @@
         return total;
     }
 
-    id = $('#film_id').html();
+    id = $('#film_id').val();
 
-    setInterval(function() {
-        $.ajax({
-            type     : 'GET',
-            url      : 'bookings/get/' + id,
-            dataType : 'json',
-            success  : function(response) {
-                //iterate through all bookings for our event
-                $.each(response.bookings, function(index, booking) {
-                    //find seat by id and set its status to unavailable
-                    console.log(response.bookings);
-                    sc.status(booking.seat_id, 'unavailable');
-                });
-            }
-        });
-    }, 4000); //every 10 seconds
+        setInterval(function() {
+            $.ajax({
+                type: 'GET',
+                url: 'bookings/get/' + id,
+                dataType: 'json',
+                success: function (response) {
+                    //iterate through all bookings for our event
 
+                    $.each(response.seats, function (index, seats) {
+                        //find seat by id and set its status to unavailable
+                        console.log(response.seats);
+                        sc.status(seats.seat_id, 'unavailable');
+                    });
+                }
+            });
+        }, 4000);
 
 
 </script>

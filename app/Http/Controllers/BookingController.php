@@ -9,14 +9,11 @@ use DB;
 use Redirect;
 use Session;
 use View;
+use Illuminate\Support\Facades\Input;
 
 class BookingController extends Controller
 {
-    function getBookId($id) {
 
-        View::make('book')->with('id', $id);
-
-}
     function getSeats($id) {
 
         $seats = Booking::where('film_id', '=', $id)
@@ -31,11 +28,11 @@ class BookingController extends Controller
     public function saveSeats(Request $request)
     {
         $booking = new Booking();
-        dd($request);
 
-        foreach ($this->request->get('seat_id') as $key => $value) {
-            $booking->seat_id = $request->get('seat_id');
-            $booking->film_id = $request->get('film_id');
+        foreach (Input::get('seat_id') as $key => $value) {
+            $booking->seat_id = $value;
+            $booking->film_id = Input::get('film_id');
+            $booking->film = Input::get('film');
             $booking->time = $request->get('time');
             $booking->save();
         }
